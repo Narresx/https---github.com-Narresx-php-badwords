@@ -1,8 +1,8 @@
 <?php
-$string = "    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+$string = "    Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit.
 Culpa unde recusandae quo. Lorem Aliquid vitae voluptatum,
-id temporibus cumque consequuntur hic omnis unde veniam odit veritatis tempora itaque,
-rerum autem eius.";
+id temporibus ipsum cumque consequuntur hic ipsum omnis unde veniam odit veritatis tempora itaque,
+rerum autem ipsum eius.";
 
 $bad_word = $_GET['bad_word'];
 
