@@ -1,5 +1,10 @@
 <?php
-$string = "Ciao"
+$string = "    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Culpa unde recusandae quo. Lorem Aliquid vitae voluptatum,
+id temporibus cumque consequuntur hic omnis unde veniam odit veritatis tempora itaque,
+rerum autem eius.";
+
+var_dump($string);
 ?>
 
 <!DOCTYPE html>
