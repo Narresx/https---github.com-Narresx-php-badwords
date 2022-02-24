@@ -4,7 +4,12 @@ Culpa unde recusandae quo. Lorem Aliquid vitae voluptatum,
 id temporibus cumque consequuntur hic omnis unde veniam odit veritatis tempora itaque,
 rerum autem eius.";
 
-var_dump($string);
+$bad_word = $_GET['bad_word'];
+
+$trimmed_string = trim($string);
+
+$result = str_replace('Lorem', '***', $trimmed_string);
+
 ?>
 
 <!DOCTYPE html>
@@ -18,11 +23,11 @@ var_dump($string);
 </head>
 
 <body>
-    <div><?php echo $string ?></div>
-    <form action="bad_word.php" method="GET">
-        <input type="text" placeholder="Scrivi una parola" name="bad_word">
-        <button type="submit">Invia</button>
-    </form>
+    <div> La tua parola è <?php echo $bad_word ?></div>
+
+    <div> Il tuo novo testo è
+        <p> <?php echo $result ?></p>
+    </div>
 </body>
 
 </html>
