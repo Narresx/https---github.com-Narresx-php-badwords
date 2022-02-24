@@ -1,10 +1,15 @@
 <?php
-$string = "    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+$string = "    Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit.
 Culpa unde recusandae quo. Lorem Aliquid vitae voluptatum,
-id temporibus cumque consequuntur hic omnis unde veniam odit veritatis tempora itaque,
-rerum autem eius.";
+id temporibus ipsum cumque consequuntur hic ipsum omnis unde veniam odit veritatis tempora itaque,
+rerum autem ipsum eius.";
 
-var_dump($string);
+$bad_word = $_GET ? $_GET['bad_word'] : '';  // controllo se esiste GET
+
+$trimmed_string = trim($string);
+
+$result = str_replace($bad_word, '***', $trimmed_string);
+
 ?>
 
 <!DOCTYPE html>
@@ -18,11 +23,20 @@ var_dump($string);
 </head>
 
 <body>
-    <div><?php echo $string ?></div>
-    <form action="bad_word.php" method="GET">
+    <form action="index.php" method="GET">
         <input type="text" placeholder="Scrivi una parola" name="bad_word">
         <button type="submit">Invia</button>
     </form>
+
+    <div> Il tuo nuovo testo originale è
+        <p> <?php echo $string ?></p>
+    </div>
+
+    <div> La tua parola è <?php echo $bad_word ?></div>
+
+    <div> Il tuo nuovo testo è
+        <p> <?php echo $result ?></p>
+    </div>
 </body>
 
 </html>
