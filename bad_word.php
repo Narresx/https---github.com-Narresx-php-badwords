@@ -8,7 +8,7 @@ $bad_word = $_GET['bad_word'];
 
 $trimmed_string = trim($string);
 
-$result = str_replace('Lorem', '***', $trimmed_string);
+$result = str_replace($bad_word, '***', $trimmed_string);
 
 ?>
 
