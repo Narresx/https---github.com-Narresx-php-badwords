@@ -25,7 +25,7 @@ $result = str_replace($bad_word, '***', $trimmed_string);
 <body>
     <div> La tua parola è <?php echo $bad_word ?></div>
 
-    <div> Il tuo novo testo è
+    <div> Il tuo nuovo testo è
         <p> <?php echo $result ?></p>
     </div>
 </body>
